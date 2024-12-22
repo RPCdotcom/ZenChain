@@ -1,3 +1,6 @@
+![image](https://github.com/user-attachments/assets/16af2aa6-42bd-4e23-a57b-a14daf77f577)
+
+
 # ZenChain Node Kurulum : 
 
 ## Gereksinimler : 
