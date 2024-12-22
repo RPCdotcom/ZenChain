@@ -1,8 +1,7 @@
 ![image](https://github.com/user-attachments/assets/6cad99e9-2eab-450c-8bf7-128b4f12e669)
 
 
-
-# ZenChain Node Kurulum : 
+# ZenChain Validator Node Kurulum : 
 
 ## Gereksinimler : 
 
