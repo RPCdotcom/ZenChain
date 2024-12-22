@@ -48,3 +48,9 @@ docker-compose --version
 sudo groupadd docker
 sudo usermod -aG docker $USER
 ```
+
+## 5. Docker Güncel İmage Çekelim
+
+```bash
+docker pull ghcr.io/zenchain-protocol/zenchain-testnet:latest
+```
