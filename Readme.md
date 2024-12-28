@@ -57,7 +57,7 @@ docker pull ghcr.io/zenchain-protocol/zenchain-testnet:latest
 
 ## 6. Docker Compose Dosyası Hazırlayalım : 
 
-- Boş Hali
+- Düzenlenmemiş Hali
 
 ```bash
 # development
@@ -87,7 +87,7 @@ services:
       - "--base-path=/chain-data"
       - "--rpc-cors=all"
       - "--validator"
-      - "--name=You are currently flying in RPCDOT Airspace - Leave the restricted airspace immediately or you will be engaged "
+      - "--name=You are currently flying in RPCDOT Airspace - Leave the restricted airspace immediately or you will be engaged"
       - "--bootnodes=/dns4/node-7242611732906999808-0.p2p.onfinality.io/tcp/26266/p2p/12D3KooWLAH3GejHmmchsvJpwDYkvacrBeAQbJrip5oZSymx5yrE"
       - "--chain=zenchain_testnet"
 ```
