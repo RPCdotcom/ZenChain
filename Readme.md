@@ -91,3 +91,24 @@ services:
       - "--bootnodes=/dns4/node-7242611732906999808-0.p2p.onfinality.io/tcp/26266/p2p/12D3KooWLAH3GejHmmchsvJpwDYkvacrBeAQbJrip5oZSymx5yrE"
       - "--chain=zenchain_testnet"
 ```
+
+
+## Bazı Bilgiler : 
+
+```bash
+--base-path=/chain-data
+--rpc-cors=all
+--unsafe-rpc-external
+--validator
+--name="Your node name"
+--bootnodes=/dns4/node-7242611732906999808-0.p2p.onfinality.io/tcp/26266/p2p/12D3KooWLAH3GejHmmchsvJpwDYkvacrBeAQbJrip5oZSymx5yrE
+--chain=zenchain_testnet
+```
+
+- --base-path=/chain-data : Database Alanı.
+- --rpc-cors=all	: Tarayıcı ortamından gelen RPC isteklerine izin vermek için CORS'u etkinleştirin.
+- --unsafe-rpc-external : Güvenli olmayan yöntemler de dahil olmak üzere tüm RPC yöntemlerini etkinleştirin.
+- --validator	: Validatör node olarak çalıştırmak için.
+- --name	: Adınız - İstediğinizi kullanabilirsiniz.
+- --bootnodes= : Bunu değiştirmiyoruz.
+- --chain=zenchain_testnet	 : Ağ bilgisi - burayı değiştirmiyoruz.
