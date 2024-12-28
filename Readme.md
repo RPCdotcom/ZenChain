@@ -112,3 +112,20 @@ services:
 - --name	: Adınız - İstediğinizi kullanabilirsiniz.
 - --bootnodes= : Bunu değiştirmiyoruz.
 - --chain=zenchain_testnet	 : Ağ bilgisi - burayı değiştirmiyoruz.
+
+
+## Son Halini Kaydediyoruz : 
+
+```bash
+mkdir zen
+```
+
+```bash
+cd zen
+```
+
+```bash
+nano docker-compose.yml
+```
+
+## Son halini mousenizin sağ tık'ı ile yapıştırıp CTRL X Y Enter. Yaparak kaydedin.
