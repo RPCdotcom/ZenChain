@@ -54,3 +54,40 @@ sudo usermod -aG docker $USER
 ```bash
 docker pull ghcr.io/zenchain-protocol/zenchain-testnet:latest
 ```
+
+## 6. Docker Compose Dosyası Hazırlayalım : 
+
+- Boş Hali
+
+```bash
+# development
+services:
+  zenchain:
+    image: ghcr.io/zenchain-protocol/zenchain-testnet:latest
+    platform: linux/amd64
+    container_name: zenchain
+    ports:
+      - "9944:9944"
+    command:
+      - "./usr/bin/zenchain-node"
+      - "--dev"
+
+# production
+services:
+  zenchain:
+    image: ghcr.io/zenchain-protocol/zenchain-testnet:latest
+    platform: linux/amd64
+    container_name: zenchain
+    ports:
+      - "9944:9944"
+    volumes:
+      - ./chain-data:/chain-data
+    command:
+      - "./usr/bin/zenchain-node"
+      - "--base-path=/chain-data"
+      - "--rpc-cors=all"
+      - "--validator"
+      - "--name=You are currently flying in RPCDOT Airspace - Leave the restricted airspace immediately or you will be engaged "
+      - "--bootnodes=/dns4/node-7242611732906999808-0.p2p.onfinality.io/tcp/26266/p2p/12D3KooWLAH3GejHmmchsvJpwDYkvacrBeAQbJrip5oZSymx5yrE"
+      - "--chain=zenchain_testnet"
+```
